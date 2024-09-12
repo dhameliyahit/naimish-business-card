@@ -192,35 +192,29 @@
             <!-- gallery section start -->
             <div class="gallery">
                 <div class="image-grid">
-                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141003_a8af41ca.jpg" alt="Image 1" onclick="openModal(this.src)">
-                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141007_0500b6a4.jpg" alt="Image 2" onclick="openModal(this.src)">
-                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141007_b944fb1c.jpg" alt="Image 3" onclick="openModal(this.src)">
-                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141006_ac1295c3.jpg" alt="Image 4" onclick="openModal(this.src)">
-                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141004_2fe40407.jpg" alt="Image 5" onclick="openModal(this.src)">
-                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141000_e6b9b39a.jpg" alt="Image 6" onclick="openModal(this.src)">
-                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141000_0fe0a7fa.jpg" alt="Image 7" onclick="openModal(this.src)">
-                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_140957_e7278612.jpg" alt="Image 8" onclick="openModal(this.src)">
-                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_140955_a12010c6.jpg" alt="Image 9" onclick="openModal(this.src)">
-                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-06-09_at_100409_40c4212f.jpg" alt="Image 10" onclick="openModal(this.src)">
+                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141003_a8af41ca.jpg" alt="Image 1" onclick="openModal(0)">
+                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141007_0500b6a4.jpg" alt="Image 2" onclick="openModal(1)">
+                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141007_b944fb1c.jpg" alt="Image 3" onclick="openModal(2)">
+                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141006_ac1295c3.jpg" alt="Image 4" onclick="openModal(3)">
+                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141004_2fe40407.jpg" alt="Image 5" onclick="openModal(4)">
+                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141000_e6b9b39a.jpg" alt="Image 6" onclick="openModal(5)">
+                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_141000_0fe0a7fa.jpg" alt="Image 7" onclick="openModal(6)">
+                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_140957_e7278612.jpg" alt="Image 8" onclick="openModal(7)">
+                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-07-14_at_140955_a12010c6.jpg" alt="Image 9" onclick="openModal(8)">
+                    <img src="https://cdn0030.qrcodechimp.com/qr/PROD/6464cf7c6a734a24226f7a53/fm/whatsapp_image_2024-06-09_at_100409_40c4212f.jpg" alt="Image 10" onclick="openModal(9)">
                 </div>
             </div>
+    
             
-            <!-- Modal -->
-            <div id="imageModal" class="modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <img class="modal-content" id="modalImage">
-            </div>
             
             <!-- image modal start -->
             <div id="imageModal" class="modal">
                 <span class="close" onclick="closeModal()">&times;</span>
                 <img class="modal-content" id="modalImage">
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
             </div>
              <!-- image modal end -->
-             <div id="imageModal" class="modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <img class="modal-content" id="modalImage">
-            </div>
             <!-- gallery section end -->
 
             <!-- web-link start -->

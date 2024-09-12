@@ -53,6 +53,7 @@ main {
     bottom: 0;
     left: 0;
     right: 0;
+    border-radius: 0.5rem;
     height: 300px; /* Adjust the height to make the shadow larger or smaller */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent); /* Creates the shadow effect */
 }
@@ -137,9 +138,6 @@ main {
     text-decoration: none;
 }
 
-.contact-icons li a:hover {
-    color: rgb(77, 116, 224);
-}
 
 .contact-icons li a i {
     font-size: 25px;
@@ -541,6 +539,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Modal styles */
 .modal {
     display: none;
     position: fixed;
@@ -574,6 +573,69 @@ main {
 .close:hover {
     color: #ccc;
 }
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.3s;
+    user-select: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* for moblie arrow styling */
+@media (max-width: 768px) {
+    .prev, .next {
+        font-size: 30px;  /* Reduce the font size */
+        padding: 12px;    /* Adjust padding */
+    }
+
+    .prev {
+        left: 5px;  /* Reduce the space from the left */
+    }
+
+    .next {
+        right: 5px;  /* Reduce the space from the right */
+    }
+}
+
+/* Smaller mobile screens */
+@media (max-width: 480px) {
+    .prev, .next {
+        font-size: 25px;  /* Further reduce the font size */
+        padding: 10px;    /* Adjust padding */
+    }
+
+    .prev {
+        left: 2px;  /* Even closer to the edge */
+    }
+
+    .next {
+        right: 2px;  /* Even closer to the edge */
+    }
+}
+/* mobile arrow styling end */
+
 
 .web-links {
     background-color: white;
